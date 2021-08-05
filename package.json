@@ -1,0 +1,60 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "React CLI with TS",
+  "main": "./src/indes.tsx",
+  "scripts": {
+    "start": "webpack serve --config webpack.dev.config.js --progress"
+  },
+  "author": "dreamerryao",
+  "license": "ISC",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javaLuo/react-luo.git"
+  },
+  "installConfig": {
+    "pnp": false
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "react": "17.x",
+    "react-dom": "17.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-export-default-from": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.2",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.0",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.1.2",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "browserslist": [
+    "iOS >= 8",
+    "last 1 versions",
+    "> 2%",
+    "not dead",
+    "not op_mini all"
+  ]
+}
