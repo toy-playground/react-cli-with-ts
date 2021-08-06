@@ -1,17 +1,17 @@
 {
   "name": "template",
   "version": "1.0.0",
-  "description": "React CLI with TS",
+  "description": "React template with TS",
   "main": "./src/indes.tsx",
   "scripts": {
     "start": "webpack serve --config webpack.dev.config.js --progress"
   },
   "author": "dreamerryao",
-  "license": "ISC",
+  "license": "MIT",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/javaLuo/react-luo.git"
+    "url": "git+https://github.com/toy-playground/react-template-with-ts.git"
   },
   "installConfig": {
     "pnp": false
